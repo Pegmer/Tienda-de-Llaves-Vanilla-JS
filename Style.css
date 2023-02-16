@@ -1,0 +1,251 @@
+body{
+   background-color: aquamarine;
+   margin: 0px;
+   padding: 0px;
+   margin-top: -50px;
+   margin-bottom: -20px;
+}
+.contenedor{
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   align-content: center;
+   color: rgb(7, 7, 100);
+   font-family: 'Playfair Display', serif;
+
+}
+.imagenes{
+   height: 200px;
+}
+
+.llave{
+   background-color: aqua;
+   flex-grow: 1;
+   margin: 20px;
+   width: 200px;
+   max-width: 300px;
+   border:  2px solid rgb(7, 7, 100);
+   padding: 10px 10px;
+}
+
+.llave:hover{
+   border-color: rgb(174, 246, 67);
+   box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+
+.llave:focus{
+   background-color: rgb(0, 255, 230);
+   border-color: rgb(174, 246, 67);
+   box-shadow: 0 0 20px rgb(128, 128, 128);
+}
+
+.botones{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Playfair Display",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button{
+   align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Playfair Display",monospace;
+  height: 32px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+
+.botones:focus, .button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.botones:hover, .button:hover{
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.botones:active, .button:active{
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.buscar{
+   position: relative;
+   top: 3.6rem;
+   left: 1rem;
+}
+
+input.src{
+   padding: 9px 10px 9px 32px;
+   outline: none;
+   font-size: 16px;
+   font-family: "Playfair Display", sans-serif;
+   border-radius: 15px;
+   color: red;
+   border: 3px solid yellow;
+   background: #fff url("Imagenes\\Buscar.png") no-repeat;
+   background-position: 5px center;
+   background-size: 23px;
+   width: 70px;
+   transition: all .5s;
+}
+
+.src:hover{
+   width: 200px;
+   border-color: red;
+   box-shadow: 0 0 5px grey;
+} 
+
+h1{
+background-color: aqua;
+text-align: center;
+font-size: 70px;
+font-weight: 600;
+font-family: "Playfair Display", sans-serif;
+color: rgb(12, 12, 141);;
+text-transform: uppercase;
+text-shadow: 1px 1px 0px rgb(7, 7, 100),
+             1px 2px 0px rgb(7, 7, 100),
+             1px 3px 0px rgb(7, 7, 100),
+             1px 4px 0px rgb(7, 7, 100),
+             1px 5px 0px rgb(7, 7, 100),
+             1px 6px 0px rgb(7, 7, 100),
+             1px 10px 5px rgba(16, 16, 16, 0.5),
+             1px 15px 10px rgba(16, 16, 16, 0.4),
+             1px 20px 30px rgba(16, 16, 16, 0.3),
+             1px 25px 50px rgba(16, 16, 16, 0.2);
+height: auto;
+padding: 15px;
+border:  2px solid rgb(7, 7, 100);
+}
+
+.division{
+   width: 100%;
+   float: left;
+   background-color: black;
+}
+
+.division ul li{
+   float: right;
+   list-style-type: none;
+}
+
+.iconos{
+   width: 45px;
+}
+
+#letras{
+   font-family: "Playfair Display", sans-serif;
+   color: aqua;
+   margin: 15px;
+   margin-top: 8px;
+}
+
+footer{
+   background-color: black;
+   display: flex;
+   flex-wrap: wrap;
+   flex-grow: 1;
+   flex-basis: 1;
+}
+
+.link{
+   width: 33.33%;
+   margin: 0;
+   padding: 0;
+   padding-top: 1.2rem;
+}
+
+footer ul{
+   text-align: center;
+   list-style: none;
+   width: 33.33%;
+   margin: 0;
+   padding: 0;
+}
+
+.titulo{
+   font-family: "Playfair Display", sans-serif;
+   color: aqua;
+   text-decoration: underline;
+   transition: all 0.5s;
+}
+
+.tele{
+   font-family: "Playfair Display", sans-serif;
+   color: aqua;
+   text-decoration: none;
+   transition: all 0.5s ease;
+}
+.tele:hover{
+   color: aquamarine
+}
+
+footer ul li:hover{
+   color: rgb(0, 170, 255);
+}
+
+#letra{
+   font-family: "Playfair Display", sans-serif;
+   color: aqua;
+   text-decoration: none;
+}
+
+footer p{
+   text-align: right;
+   width: 33.33%;
+   margin: 0;
+   padding: 0;
+   padding-top: 1.2rem;
+}
+
+
+
+
